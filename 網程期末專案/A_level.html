@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- A_level 分數頁面 -->
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>A_level</title>
+	  <style type = "text/css">
+		#A_backimg	{
+			background: #000 url(level_background.jpg) center center fixed;
+			background-repeat:no-repeat;
+		    -moz-background-size: cover;
+			background-size: cover;
+		}
+				 
+		#A {
+			position: absolute;
+			top: -3em;
+			right: -5em;
+			width: 60%;
+			height: 70%;
+		}
+		
+		#awesome {
+			position: absolute;
+			bottom: 13em;
+			left: 8em;
+			width: 35%;
+			height: 45%;
+		}
+		
+		#Level {
+			position: absolute;
+			bottom: -3em;
+			right: -10em;
+			width: 65%;
+			height: 65%;
+		}
+		
+		#button	{
+			position: absolute;
+			bottom: 2.75em;
+			left: 8em;
+			width: 13%;
+			height: 13%;
+		}
+		
+		#button4	{
+			position: absolute;
+			bottom: 2.75em;
+			left: 28em;
+			width: 13%;
+			height: 13%;
+		}
+	  </style>
+	  <link rel="stylesheet" href = "animation.css">
+	  <script>
+		function start()
+	   {
+		document.getElementById("button").addEventListener("mouseover",mouse_over,false);
+		document.getElementById("button").addEventListener("mouseout",mouse_out,false);
+		document.getElementById("button4").addEventListener("mouseover",mouse_over1,false);
+		document.getElementById("button4").addEventListener("mouseout",mouse_out1,false);
+	   }
+		
+	   function mouse_over()
+	  {
+		document.getElementById("button").setAttribute("src","button1.png");
+	  }
+	   function mouse_over1()
+	  {
+		document.getElementById("button4").setAttribute("src","button3.png");
+	  }
+	   function mouse_out()
+	  {
+		document.getElementById("button").setAttribute("src","button.png");
+	  }
+	  function mouse_out1()
+	  {
+		document.getElementById("button4").setAttribute("src","button4.png");
+	  }
+	   window.addEventListener("load", start, false);
+	  </script>
+   </head>
+   <body id = "A_backimg">
+		<img id = "A"  src = "A.png" class = "animation pulse">
+		<img id = "awesome"  src = "awesome.png" class = "animation tossing">
+		<img id = "Level"  src = "Level.png">
+		<a href = "Start.html"><img id = "button" src = "button.png"></a>
+		<a href = "節奏.html"><img id = "button4" src = "button4.png"></a>
+   </body>
+</html>

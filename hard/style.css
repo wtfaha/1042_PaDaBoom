@@ -1,0 +1,89 @@
+/*			header, nav, div, footer{
+				display: block;
+			}
+			header, nav, div, footer {
+				color: white;
+			}
+			header, footer {
+				width: 300px;
+				text-align: center;
+				margin:auto;	<!--整體置中-->
+			}
+			header {
+				background-color: #FFFF3B;
+				font-size: 36px;
+				font-weight: bold;
+			}
+			*/
+			div {
+				width: 800px;
+				height: 50px;
+				position:absolute;top:55%;left:20%;
+				z-index: 3;
+				display: block;
+				color: white;
+			}
+			#div{
+				filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;
+			}
+			#movie{
+				width:795;
+				height:500;
+				position:absolute;top:15%;left:20%;
+				filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.8;
+			}
+			#gameStart{
+				position:absolute;top:80%;left:20%;
+				
+			}
+			body {
+				margin:0px;
+				padding:0px;
+				background: #000 url(backGround9.jpg) center center fixed no-repeat;
+				-moz-background-size: cover;
+				background-size: cover;
+			}
+			#p3{
+				position:absolute;bottom:0%;right:0%;
+			}
+			/*---------------------------pulse--------------------------*/
+			.pulse{
+				animation-name: pulse;
+				-webkit-animation-name: pulse;	
+
+				animation-duration: 1.5s;	
+				-webkit-animation-duration: 1.5s;
+
+				animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+			}
+
+			@keyframes pulse {
+				0% {
+					transform: scale(0.9);
+					opacity: 0.7;		
+				}
+				50% {
+					transform: scale(1);
+					opacity: 1;	
+				}	
+				100% {
+					transform: scale(0.9);
+					opacity: 0.7;	
+				}			
+			}
+
+			@-webkit-keyframes pulse {
+				0% {
+					-webkit-transform: scale(0.95);
+					opacity: 0.7;		
+				}
+				50% {
+					-webkit-transform: scale(1);
+					opacity: 1;	
+				}	
+				100% {
+					-webkit-transform: scale(0.95);
+					opacity: 0.7;	
+				}			
+			}

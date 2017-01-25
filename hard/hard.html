@@ -1,0 +1,49 @@
+
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+
+		 <script src="music_hard.js">
+		</script>
+	</head>
+	<body id = "Body" onload="load()">
+		<!--星星-->
+		
+		<video id="movie" >
+			<source src="Not Good Enough.mp4">
+		</video>
+		
+		<div id="div" >
+	   	</div>
+		
+		<div>
+			<p id="p2" align="center">
+				<marquee scrollamount="30" behavior="alternate">
+					<img  id ="s1"  class = "animation pulse"src="s.png" style="z-index:100"; width="70px" height="70px"	onclick="gameStart('start')"/>
+					<img  id ="t1"  class = "animation pulse"src="t.png" style="z-index:100"; width="70px" height="70px"	onclick="gameStart('start')"/>
+					<img  id ="a1"  class = "animation pulse"src="a.png" style="z-index:100"; width="70px" height="70px"	onclick="gameStart('start')"/>
+					<img  id ="r1"  class = "animation pulse"src="r.png" style="z-index:100"; width="70px" height="70px"	onclick="gameStart('start')"/>
+					<img  id ="t2"  class = "animation pulse"src="t.png" style="z-index:100"; width="70px" height="70px"	onclick="gameStart('start')"/>
+				</marquee>
+			</p>
+			<p>
+				<!--按鍵聲音-->
+				<audio id="keySound">
+					<source src="PUSH2(short).WAV">
+				</audio>
+				<audio id="goodSound">
+					<source src="good.mp3">
+				</audio>
+				<audio id="badSound">
+					<source src="bad.mp3">
+				</audio>
+			</p>
+		</div>
+		<!--<input id="gameStart" type="button" value="Start" >-->
+	
+		<p id="p3">
+			
+		</p>
+			
+	</body>
+</html>
